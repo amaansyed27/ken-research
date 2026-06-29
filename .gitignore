@@ -1,4 +1,8 @@
-# Local model artifacts
+# Local training artifacts
+adapters/
+models/
+reports/
+runs/
 checkpoints/
 outputs_*/
 *.zip
