@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>KenProbe Research Testbench</title>
+    <link rel="stylesheet" href="/styles.css" />
+  </head>
+  <body>
+    <main class="shell">
+      <aside class="sidebar">
+        <div class="brand">
+          <div class="mark">K</div>
+          <div>
+            <h1>KenProbe</h1>
+            <p>Research model testbench</p>
+          </div>
+        </div>
+
+        <section class="panel">
+          <label>Mode</label>
+          <select id="mode">
+            <option value="chat">Chat</option>
+            <option value="search">Search answer</option>
+            <option value="deep">Deep research</option>
+            <option value="tool">Tool-call test</option>
+          </select>
+        </section>
+
+        <section class="panel">
+          <label>Model</label>
+          <select id="modelChoice">
+            <option value="baseline">Baseline</option>
+            <option value="kenprobe">KenProbe</option>
+          </select>
+          <button id="compareBtn" class="secondary">Compare baseline vs KenProbe</button>
+        </section>
+
+        <section class="panel small" id="configPanel">
+          Loading config...
+        </section>
+      </aside>
+
+      <section class="chat">
+        <header class="topbar">
+          <div>
+            <h2>Research Chat</h2>
+            <p>Markdown answers, sources, tool trace, and model comparison.</p>
+          </div>
+          <button id="clearBtn" class="ghost">Clear</button>
+        </header>
+
+        <div id="messages" class="messages"></div>
+
+        <form id="chatForm" class="composer">
+          <textarea id="prompt" rows="3" placeholder="Ask a research question. Example: Compare Qwythos 9B with Gemini Flash for research tasks."></textarea>
+          <button id="sendBtn" type="submit">Run</button>
+        </form>
+      </section>
+
+      <aside class="inspector">
+        <section>
+          <h3>Tool trace</h3>
+          <div id="trace" class="trace empty">No tool calls yet.</div>
+        </section>
+        <section>
+          <h3>Sources</h3>
+          <div id="sources" class="sources empty">No sources yet.</div>
+        </section>
+      </aside>
+    </main>
+
+    <script src="/app.js" type="module"></script>
+  </body>
+</html>
