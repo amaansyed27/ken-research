@@ -1,0 +1,11 @@
+# Local model artifacts
+checkpoints/
+outputs_*/
+*.zip
+*.safetensors
+*.gguf
+
+# Notebook/runtime clutter
+.ipynb_checkpoints/
+__pycache__/
+*.pyc
