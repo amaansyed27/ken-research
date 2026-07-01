@@ -1,1 +1,1 @@
-{"name":"kenprobe-web","version":"0.1.0","private":true,"type":"module","scripts":{"dev":"node server.js","start":"node server.js"},"dependencies":{"dotenv":"^17.4.2"}}
+{"name":"kenprobe-web","version":"0.1.0","private":true,"type":"module","scripts":{"dev":"node --env-file=.env debug-server.js","start":"node --env-file=.env debug-server.js","raw":"node --env-file=.env server.js"},"dependencies":{}}
