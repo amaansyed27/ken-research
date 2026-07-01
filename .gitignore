@@ -13,3 +13,8 @@ outputs_*/
 .ipynb_checkpoints/
 __pycache__/
 *.pyc
+
+.env
+
+web/node_modules
+
