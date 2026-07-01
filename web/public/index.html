@@ -45,7 +45,7 @@
         <header class="topbar">
           <div>
             <h2>Research Chat</h2>
-            <p>Markdown answers, sources, tool trace, and model comparison.</p>
+            <p>Markdown answers, sources, tool trace, timing, and model comparison.</p>
           </div>
           <button id="clearBtn" class="ghost">Clear</button>
         </header>
@@ -59,6 +59,10 @@
       </section>
 
       <aside class="inspector">
+        <section>
+          <h3>Run logs</h3>
+          <div id="logs" class="logs empty">No run yet.</div>
+        </section>
         <section>
           <h3>Tool trace</h3>
           <div id="trace" class="trace empty">No tool calls yet.</div>
