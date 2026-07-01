@@ -1,1 +1,1 @@
-{"name":"kenprobe-web","version":"0.1.0","private":true,"type":"module","scripts":{"dev":"node server.js","start":"node server.js"},"dependencies":{}}
+{"name":"kenprobe-web","version":"0.1.0","private":true,"type":"module","scripts":{"dev":"node debug-server.js","start":"node debug-server.js","raw":"node server.js"},"dependencies":{}}
